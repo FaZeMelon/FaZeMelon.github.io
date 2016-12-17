@@ -12,5 +12,5 @@ Contributors
 We currently only have one contributor and that would be xNyanMelon (www.twitter.com/fazemelonking) we will have an IRC server open soon.
 
 License
-
-We currently hold an MIT license.
+Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
+Copyright (c) 2016 xNyan Melon
