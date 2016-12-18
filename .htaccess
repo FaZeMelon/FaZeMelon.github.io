@@ -1,6 +1,6 @@
 Options -Indexes
 ErrorDocument 403 "<a href='https://fazemelon.github.io'><img src='/images/Error404' /></a>"
 ErrorDocument 404 "<a href='https://fazemelon.github.io'><img src='/images/Error404' /></a>"
-ErrorDocument 404 https://fazemelon.github.io/404page.html
+ErrorDocument 404 "https://fazemelon.github.io/404page.html"
 
 Redirect 301 /staff/ /staff.html
