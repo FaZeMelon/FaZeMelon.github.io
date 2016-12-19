@@ -26,6 +26,14 @@
 		<meta name="msapplication-TileImage" content="/images3/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 		<iframe width="1" height="1" src="https://www.youtube.com/embed/13ARO0HDZsQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+		<script>
+  function signOut() {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      console.log('User signed out.');
+    });
+  }
+		</script>
 		<style>
 			p.indieflower {
 				font-family: 'Indie Flower', cursive;
@@ -184,14 +192,6 @@
       };
     		</script>
 		<a href="#" onclick="signOut();">Sign out</a>
-		<script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-		</script>
 		<center>
 			<img src="/images/FaZeMelon.jpg" alt="FaZeMelon" width="200" height="200">
 		<center>
