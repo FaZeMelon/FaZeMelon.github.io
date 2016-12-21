@@ -157,8 +157,56 @@
 				line-height: 23px;
 			}
 		</style>
+		<style>
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown a:hover {background-color: #f1f1f1}
+.show {display:block;}
+</style>
   </head>    
   <body>
+	  		<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">Click me for menu</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="/index">Home</a>
+    <a href="/games/trivia">Trivia</a>
+    <a href="/games/bounce">Bounce</a>
+    <a href="/games/snake">Snake</a>
+	  <a href="/login">Login</a>
+  </div>
+</div>
+
+<script src="/javascript/dropdown.js"> </script>
      <center> 
       <h1 class="cursive3">Welcome to the games page</h1>
      </center>
@@ -166,22 +214,6 @@
      <center>
       <h3 class="cursive3"> Click the buttons to play the games below </h3>
 	</center>
-		  
-     <form method="get" action="/games/flappysquare.html">
-    <button type="submit">Flappy Square</button>
-</form>
-<form method="get" action="/games/trivia.html">
-	<button type="submit">Trivia</button>
-	  </form>
-	  <form method="get" action="/games/snake.html">
-		  <button type="submit">Snake </button>
-	  </form>
-	  <form method="get" action="/games/bounce.html">
-		  <button type="submit">Bounce</button>
-	  </form>
-	  <form method="get" action="/games/melontrivia.html">
-		  <button type="submit">Melon Trivia</button>
-	  </form>
 <!-- Message to self, these are fonts leave these at the bottom. -->
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Aguafina+Script" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script" /> 
