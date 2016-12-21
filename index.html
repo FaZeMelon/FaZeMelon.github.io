@@ -6,8 +6,6 @@
 		<meta name="description" content="This is just a test page for my web development skills.">
 		<meta name="keywords" content="Badgers, Badgers4Sale, Memes, Funny, Nyan, Melons, Melons4Sale, .tk, Lol, Test, FaZe, FaZeMelon, FaZeMelonKing">
 		<meta name="author" content="xNyan Melon">
-		<meta name="google-signin-scope" content="profile email">
-    		<meta name="google-signin-client_id" content="972826722863-o7uo6c8fbtkchh412n7ihg6iaup178c4.apps.googleusercontent.com">
 		<link rel="apple-touch-icon" sizes="57x57" href="/images3/apple-icon-57x57.png">
 		<link rel="apple-touch-icon" sizes="60x60" href="/images3/apple-icon-60x60.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="/images3/apple-icon-72x72.png">
@@ -68,14 +66,6 @@
 
 .show {display:block;}
 </style>
-		<script>
-  function signOut() {
-    var auth2 = gapi.auth2.getAuthInstance();
-    auth2.signOut().then(function () {
-      console.log('User signed out.');
-    });
-  }
-		</script>
 		<style>
 			p.indieflower {
 				font-family: 'Indie Flower', cursive;
@@ -220,51 +210,11 @@
   <div id="myDropdown" class="dropdown-content">
     <a href="/index">Home</a>
     <a href="/about">About</a>
+    <a href="/login">Login</a>
   </div>
 </div>
 
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-		<script src="/javascript/platform.js" async defer></script>
-		<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    		<script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
-
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
-    		</script>
-		<a href="#" onclick="signOut();">Sign out</a>
-		<center>
+<script src="/javascript/dropdown.js"> </script>
 			<img src="/images/FaZeMelon.jpg" alt="FaZeMelon" width="200" height="200">
 		<center>
 			<h1 class="cursive2"> Welcome to <br>
