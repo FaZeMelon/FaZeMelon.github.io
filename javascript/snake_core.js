@@ -12,15 +12,15 @@ var lvl_height = 20;
 var speed = 16;
 
 snakeHeadImage = new Image();
-snakeHeadImage.src = "resources/head.png";
+snakeHeadImage.src = "/images/head.png";
 snakeBodyImage = new Image();
-snakeBodyImage.src = "resources/body.png";
+snakeBodyImage.src = "/images/body.png";
 snakeTailImage = new Image();
-snakeTailImage.src = "resources/tail.png";
+snakeTailImage.src = "/images/tail.png";
 
 //food
 foodImage = new Image();
-foodImage.src = "resources/food.png";
+foodImage.src = "/images/food.png";
 
 create_snake();
 create_food();
