@@ -67,7 +67,7 @@ function animate()
 	}
 	else
 	{
-		displayText("You so Sux.. Game Over homie");
+		displayText("ehhh you sux bro game over fam");
 	}
 	//context.drawImage(aniblock, aniblock_x, aniblock_y); 
 
