@@ -33,12 +33,23 @@
 </head>
 <body>
 <div class="container">
-  <button type="button" class="btn btn-info">Home</button>
-  <button type="button" class="btn btn-info">Staff List</button>
-  <button type="button" class="btn btn-info">Twitter Feed</button>
-  <button type="button" class="btn btn-info">Announcements</button>
-  <button type="button" class="btn btn-info">About</button>
-  <button type="button" class="btn btn-info">Forums</button>    
+  <h2>Nesting Button Groups</h2>
+  <p>Nest button groups to create drop down menus:</p>
+  <div class="btn-group">
+    <button type="button" class="btn btn-info">Home</button>
+    <button type="button" class="btn btn-info">About</button>
+    <button type="button" class="btn btn-info">Announcements</button>
+    <button type="button" class="btn btn-info">Staff List</button>
+    <button type="button" class="btn btn-info">Forum</button>
+    <div class="btn-group">
+      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+      Twitter <span class="caret"></span></button>
+      <ul class="dropdown-menu" role="menu">
+        <li><a href="https://www.twitter.com/fazemelonking">FaZeMelon</a></li>
+        <li><a href="#">MrPramire</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
 </body>
 </html>
