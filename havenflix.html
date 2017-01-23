@@ -1,0 +1,48 @@
+        <style>
+/*The color of the bar with the dropdown on it.*/
+div {background-color: green}
+div a {
+    text-decoration: none;
+    /* color for the text */
+    color: aqua;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+    font-family: 'Armata', cursive;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: blue;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+/* color on the inside of the dropdown */
+  background: blue; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+/*hover the buttons inside the dropdown */
+ul li ul li:hover {background: purple;}
+</style>
+<div>
+	<img src="https://fazemelon.github.io/Logo.png" alt="">
+   <a href="/start">Start</a>
+	  <a href="/about">About</a>
+	  <!--<a href="/privacypolicy">Privacy Policy</a>-->
+  <ul>
+    <li>
+    <a href="#">Credits</a>
+      <ul>
+        <li><a href="https://www.twitter.com/fazemelonking">FaZeMelonKing (OWNER)</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
